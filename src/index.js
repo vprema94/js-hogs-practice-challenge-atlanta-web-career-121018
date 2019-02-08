@@ -123,30 +123,22 @@ function deleteHog(id) {
 } 
 
 function changeGrease() {
-    let update = event.target.checked
+    let newGrease = event.target.checked
     let id = event.target.dataset.id 
-
-    if (event.target.checked) {
-        event.target.checked = false 
-        update = false
-    } else {
-        event.target.checked = true
-        update = true
-    } 
     debugger
-    // updateGrease(id, update) 
+    updateGrease(id, newGrease) 
 }
 
-// function updateGrease(id, update) {
-//     return fetch(`http://localhost:3000/hogs/${id}`,{
-//       method: 'PATCH',
-//       headers: 
-//       {
-//         "Content-Type": "application/json",
-//         Accept: "application/json"
-//       }, 
-//       body: JSON.stringify({
-//         greased: update
-//       })
-//     })     
-// }  
+function updateGrease(id, newGrease) {
+    return fetch(`http://localhost:3000/hogs/${id}`,{
+      method: 'PATCH',
+      headers: 
+      {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      }, 
+      body: JSON.stringify({
+        greased: newGrease
+      })
+    })     
+}  
