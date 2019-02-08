@@ -116,6 +116,15 @@
       "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 4.1,
       "highest medal achieved": "wood",
       "image": "./hog-imgs/augustus_gloop.jpg"
+    },
+    {
+      "name": "Pippo",
+      "specialty": "Being Cute AF",
+      "greased": false,
+      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "1.2",
+      "highest medal achieved": "Gold",
+      "image": "https://vignette.wikia.nocookie.net/hellokitty/images/d/d6/Sanrio_Characters_Pippo_Image004.png/revision/latest?cb=20170518164255",
+      "id": 13
     }
   ]
 }
